@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="Property-pro, Property, Real Estate, Housing, Rentage, Andela Developer Challenge">
+		<title>Property-pro_home-page</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	</head>
+	<body>
+
+		<header class="topnav" id="myTopnav">
+			<a href="index.html" class="logo">&#127968; Property Pro</a>
+			<div class="links">
+				<a href="index.html">Home</a>
+				<a href="signup.html" class="active">Sign up</a>
+				<a href="signin.html">Login</a>
+				<a href="#">About Us</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myHeader()">
+				<span class="nav-icon">&#9776;</span>
+			</a>
+		</header>
+
+		<main class="content-container">
+			<div class="bg-img signup-bg-img">
+				<form action="signin.html" class="form-container signup-container">
+					<h1>User Registration</h1>
+
+					<label for="name"><strong>Name</strong></label><br />
+					<input type="text" placeholder="Enter First Name" name="firstName" class="half-field" required>
+					<input type="text" placeholder="Enter First Name" name="lastName" class="half-field" required>
+					
+					<label for="email"><strong>Email Address</strong></label>
+					<input type="email" placeholder="Enter Email Address" name="email" required>
+					
+					<label for="contact"><strong>Contact Information</strong></label><br />
+					<input type="text" placeholder="Enter Phone Number" name="phoneNumber" class="half-field" required>
+					<input type="text" placeholder="Enter Contact Address" name="contactAddress" class="half-field" required>
+					
+					<label for="userCategory"><strong>User Category</strong></label>
+					<select name="userCategory">
+						<option value="">Choose Category</option>
+						<option value="Client">Client User</option>
+						<option value="Agent">Agent User</option>
+					</select>
+					
+					<label for="username"><strong>Username</strong></label>
+					<input type="text" placeholder="Enter Username" name="username" required>
+					
+					<label for="password"><strong>Password</strong></label><br />
+					<input type="password" placeholder="Enter Password" name="password" class="half-field" required>
+					<input type="password" placeholder="Retype Password" name="confirmPassword" class="half-field" required>
+					
+			    <button type="submit" class="btn">Register</button>
+			 
+					<div class="login-help redirect">
+						<a class="signupred" href="signin.html">Login</a>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<p>&copy;2019 Muhammed's Cycle 46 ADC</p>
+		</footer>
+
+		<script src = "js/header.js"></script>
+
+	</body>
+</html>
