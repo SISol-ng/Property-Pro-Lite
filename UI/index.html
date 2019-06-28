@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="Property-pro, Property, Real Estate, Housing, Rentage, Andela Developer Challenge">
+		<title>Property-pro_home-page</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	</head>
+	<body class="body">
+
+		<header class="topnav" id="myTopnav">
+			<a href="index.html" class="logo">&#127968; Property Pro</a>
+			<div class="links">
+				<a href="index.html" class="active">Home</a>
+				<a href="signup.html">Sign up</a>
+				<a href="signin.html">Login</a>
+				<a href="#">About Us</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myHeader()">
+				<span class="nav-icon">&#9776;</span>
+			</a>
+		</header>
+
+		<main class="content-container">
+			<section class="site-description">
+				<h2>Welcome to Propety Pro Lite!</h2>
+				<p>An amazing online real estate platform where people can create and/or search properties for sale or rent.
+				We have agents all over the country, thereby making available properties from most part of the county either for 
+				Sale or for Rent. As a new Agent or Client, all you need to do is to:<br >
+				<div class="get-started"><a href="signup.html">Get Started</a></div></p> 
+			</section>
+			<aside id="mySidepanel" class="side-panel">
+				<a href="index.html">All Adverts</a>
+				
+				<div class="filter-heading">Filter Options</div>
+				<a href="#" onclick="expandTypeFilter()">By Type <span id="type-expand-icon">+</span></a>
+				<div id="filterByType">
+					<select class="filterItem">
+						<option value="" selected>Type of Property</option>
+						<option value="Self Contain">Self Contain</option>
+						<option value="1 bedroom Flat">1 bedroom Flat</option>
+						<option value="2 bedroom Flat">2 bedroom Flat</option>
+						<option value="3 bedroom Flat">3 bedroom Flat</option>
+						<option value="4 bedroom Flat">4 bedroom Flat</option>
+						<option value="5 bedroom Flat">5 bedroom Flat</option>
+					</select>
+					<button type="button" class="filterItem">Filter</button>
+				</div>
+				
+				<a href="#" onclick="expandTermFilter()">By Term <span id="term-expand-icon">+</span></a>
+				<div id="filterByTerm">
+					<button type="button" class="filterItem">For Sale</button>
+					<button type="button" class="filterItem">For Rent</button>
+				</div>
+				
+				<a href="#" onclick="expandLocationFilter()">By Location <span id="loc-expand-icon">+</span></a>
+				<div id="filterByLocation">
+					<input type="text" placeholder="Enter State" name="filterstate" class="filterItem">
+					<input type="text" placeholder="Enter City" name="filtercity" class="filterItem">
+					<button type="button" class="filterItem">Filter</button>
+				</div>
+				
+				<a href="#" onclick="expandPriceFilter()">By Price <span id="price-expand-icon">+</span></a>
+				<div id="filterByPrice">
+					<select class="filterItem">
+						<option value="" selected>Price Constraint</option>
+						<option value="Greater Than">Greater Than</option>
+						<option value="Less than">Less than</option>
+					</select>
+					<input type="text" placeholder="Enter Price in Figure" name="filterPrice" class="filterItem">
+					<button type="button" class="filterItem">Filter</button>
+				</div>
+				<a href="#">Advance Filter</a>
+			</aside>
+			<section class="content">
+				<div class="adverts">
+					<article class="ad">
+						<div>
+							<div class="addTitle">
+								<span>5 Bedroom Flat(For Rent)</span>
+							</div>
+							<div class="slideshow-container">
+								<div class="mySlides1 fade">
+									<div class="numbertext">1 / 4</div>
+									<img src="img/house1.jpg">
+									<div class="text">Caption Text</div>
+								</div>
+
+								<div class="mySlides1 fade">
+									<div class="numbertext">2 / 4</div>
+									<img src="img/house2.jpg">
+									<div class="text">Caption Two</div>
+								</div>
+
+								<div class="mySlides1 fade">
+								 <div class="numbertext">3 / 4</div>
+								  <img src="img/house3.jpg">
+									<div class="text">Caption Three</div>
+								</div>
+
+								<div class="mySlides1 fade">
+								 <div class="numbertext">4/ 4</div>
+								  <img src="img/house4.jpg">
+									<div class="text">Caption Four</div>
+								</div>
+
+								<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+							</div>
+							<div class="slideIndicator">
+							  <span class="dot1" onclick="currentSlide(1, 0)"></span> 
+								<span class="dot1" onclick="currentSlide(2, 0)"></span> 
+								<span class="dot1" onclick="currentSlide(3, 0)"></span>
+							 <span class="dot1" onclick="currentSlide(4, 0)"></span>
+							</div>
+							<hr>
+							<div class="addDescription">
+								<span>This property is located at No. 132 Adamu close, Ikeja Lagos, in the middle of Ikeja.
+								It is 100 metres drive from Micheal Faraday's shopping mall, 1km from Lagos state intercontinental beach,
+								and about 5 minutes walk from the Tafawa Balewa sport complex<span class="elipsis">...</span></span>
+							</div>
+							<hr>
+							<div class="adPrice"><strong>Price: N2,000,500.00K</strong></div>
+							<div class="addStatus">
+								<div class="status">
+									<span>Available</span>
+								</div>
+								<a href="signin.html" class="view-ad">
+									View
+								</a>
+							</div>
+						</div>
+					</article>
+					
+					<article class="ad">
+						<div>
+							<div class="addTitle">
+								<span>2 Bedroom Flat(For Sale)</span>
+							</div>
+							<div class="slideshow-container">
+								<div class="mySlides2 fade">
+									<div class="numbertext">1 / 4</div>
+									<img src="img/house1.jpg">
+									<div class="text">Caption Text</div>
+								</div>
+
+								<div class="mySlides2 fade">
+									<div class="numbertext">2 / 4</div>
+									<img src="img/house2.jpg">
+									<div class="text">Caption Two</div>
+								</div>
+
+								<div class="mySlides2 fade">
+								 <div class="numbertext">3 / 4</div>
+								  <img src="img/house3.jpg">
+									<div class="text">Caption Three</div>
+								</div>
+
+								<div class="mySlides2 fade">
+								 <div class="numbertext">4/ 4</div>
+								  <img src="img/house4.jpg">
+									<div class="text">Caption Four</div>
+								</div>
+
+								<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+							</div>
+							<div class="slideIndicator">
+							  <span class="dot2" onclick="currentSlide(1, 1)"></span> 
+								<span class="dot2" onclick="currentSlide(2, 1)"></span> 
+								<span class="dot2" onclick="currentSlide(3, 1)"></span>
+							 <span class="dot2" onclick="currentSlide(4, 1)"></span>
+							</div>
+							<hr>
+							<div class="addDescription">
+								<span>This property is located at No. 132 Adamu close, Ikeja Lagos, in the middle of Ikeja.
+								It is 100 metres drive from Micheal Faraday's shopping mall, 1km from Lagos state intercontinental beach,
+								and about 5 minutes walk from the Tafawa Balewa sport complex<span class="elipsis">...</span></span>
+							</div>
+							<hr>
+							<div class="adPrice"><strong>Price: N3,000,000.00K</strong></div>
+							<div class="addStatus">
+								<div class="status">
+									<span>Available</span>
+								</div>
+								<a href="signin.html" class="view-ad">
+									View
+								</a>
+							</div>
+						</div>
+					</article>
+					
+					<article class="ad">
+						<div>
+							<div class="addTitle">
+								<span>3 Bedroom Flat(For Rent)</span>
+							</div>
+							<div class="slideshow-container">
+								<div class="mySlides3 fade">
+									<div class="numbertext">1 / 4</div>
+									<img src="img/house1.jpg">
+									<div class="text">Caption Text</div>
+								</div>
+
+								<div class="mySlides3 fade">
+									<div class="numbertext">2 / 4</div>
+									<img src="img/house2.jpg">
+									<div class="text">Caption Two</div>
+								</div>
+
+								<div class="mySlides3 fade">
+								 <div class="numbertext">3 / 4</div>
+								  <img src="img/house3.jpg">
+									<div class="text">Caption Three</div>
+								</div>
+
+								<div class="mySlides3 fade">
+								 <div class="numbertext">4/ 4</div>
+								  <img src="img/house4.jpg">
+									<div class="text">Caption Four</div>
+								</div>
+
+								<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+							</div>
+							<div class="slideIndicator">
+							  <span class="dot3" onclick="currentSlide(1, 2)"></span> 
+								<span class="dot3" onclick="currentSlide(2, 2)"></span> 
+								<span class="dot3" onclick="currentSlide(3, 2)"></span>
+							 <span class="dot3" onclick="currentSlide(4, 2)"></span>
+							</div>
+							<hr>
+							<div class="addDescription">
+								<span>This property is located at No. 132 Adamu close, Ikeja Lagos, in the middle of Ikeja.
+								It is 100 metres drive from Micheal Faraday's shopping mall, 1km from Lagos state intercontinental beach,
+								and about 5 minutes walk from the Tafawa Balewa sport complex<span class="elipsis">...</span></span>
+							</div>
+							<hr>
+							<div class="adPrice"><strong>Price: N1,000,500.00K</strong></div>
+							<div class="addStatus">
+								<div class="status">
+									<span>Available</span>
+								</div>
+								<a href="signin.html" class="view-ad">
+									View
+								</a>
+							</div>
+						</div>
+					</article>
+					
+					<article class="ad">
+						<div>
+							<div class="addTitle">
+								<span>4 Bedroom flat(For Sale)</span>
+							</div>
+							<div class="slideshow-container">
+								<div class="mySlides4 fade">
+									<div class="numbertext">1 / 4</div>
+									<img src="img/house1.jpg">
+									<div class="text">Caption Text</div>
+								</div>
+
+								<div class="mySlides4 fade">
+									<div class="numbertext">2 / 4</div>
+									<img src="img/house2.jpg">
+									<div class="text">Caption Two</div>
+								</div>
+
+								<div class="mySlides4 fade">
+								 <div class="numbertext">3 / 4</div>
+								  <img src="img/house3.jpg">
+									<div class="text">Caption Three</div>
+								</div>
+
+								<div class="mySlides4 fade">
+								 <div class="numbertext">4/ 4</div>
+								  <img src="img/house4.jpg">
+									<div class="text">Caption Four</div>
+								</div>
+
+								<a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+							</div>
+							<div class="slideIndicator">
+							  <span class="dot4" onclick="currentSlide(1, 3)"></span> 
+								<span class="dot4" onclick="currentSlide(2, 3)"></span> 
+								<span class="dot4" onclick="currentSlide(3, 3)"></span>
+							 <span class="dot4" onclick="currentSlide(4, 3)"></span>
+							</div>
+							<hr>
+							<div class="addDescription">
+								<span>This property is located at No. 132 Adamu close, Ikeja Lagos, in the middle of Ikeja.
+								It is 100 metres drive from Micheal Faraday's shopping mall, 1km from Lagos state intercontinental beach,
+								and about 5 minutes walk from the Tafawa Balewa sport complex<span class="elipsis">...</span></span>
+							</div>
+							<hr>
+							<div class="adPrice"><strong>Price: N5,000,000.00K</strong></div>
+							<div class="addStatus">
+								<div class="status">
+									<span>Available</span>
+								</div>
+								<a href="signin.html" class="view-ad">
+									View
+								</a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<p>&copy;2019 Muhammed's Cycle 46 ADC</p>
+		</footer>
+
+		<script src = "js/header.js"></script>
+		<script src = "js/slidedShow.js"></script>
+		<script src = "js/filter.js"></script>
+		<script>
+		
+		
+		</script>
+
+	</body>
+</html>
