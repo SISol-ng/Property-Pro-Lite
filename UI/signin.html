@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="Property-pro, Property, Real Estate, Housing, Rentage, Andela Developer Challenge">
+		<title>Property-pro_home-page</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	</head>
+	<body>
+
+		<header class="topnav" id="myTopnav">
+			<a href="index.html" class="logo">&#127968; Property Pro</a>
+			<div class="links">
+				<a href="index.html">Home</a>
+				<a href="signup.html">Sign up</a>
+				<a href="signin.html" class="active">Login</a>
+				<a href="#">About Us</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myHeader()">
+				<span class="nav-icon">&#9776;</span>
+			</a>
+		</header>
+
+		<main class="content-container">
+			<div class="bg-img">
+				<form action="profile.html" class="form-container">
+					<h1>Login</h1>
+
+					<label for="username"><strong>Email Address/Username</strong></label>
+					<input type="text" placeholder="Enter Email or Username" name="username" required>
+
+					<label for="password"><strong>Password</strong></label>
+					<input type="password" placeholder="Enter Password" id="password" name="password" required>
+					
+					<div class="login-help" style=""margin-left: 0;">
+						<span>
+							<label class="switch">
+								<input type="checkbox" onclick = "showPassword()">
+								<span class="slider round-edge"></span>
+								show password
+							</label>
+						</span>
+					</div>
+
+			    <button type="submit" class="btn">Login</button>
+			 
+					<div class="login-help redirect">
+						<a class="signupred" href="signup.html">Create Account</a>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<p>&copy;2019 Muhammed's Cycle 46 ADC</p>
+		</footer>
+
+		<script src = "js/login.js"></script>
+		<script src = "js/header.js"></script>
+		
+	</body>
+</html>
